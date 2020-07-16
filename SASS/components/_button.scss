@@ -52,6 +52,16 @@
 
 	}
 
+	&--green {
+		background-color: $color-primary-main;
+		color: $color-white;
+	
+			&::after {
+			background-color: $color-primary-main;
+			}
+	
+		}
+
 	&--animated {
 	animation-name: moveInUpBtn;
 	animation-duration: .7s;
