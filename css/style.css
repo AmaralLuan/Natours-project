@@ -1,3 +1,23 @@
+/* 
+
+0 - 600PX  = Phone
+600px - 900px = Tablet [portrait mode]
+900px - 1200px = Table [landscape mode]
+[1200px - 1799px - normal styles apply]
+1800px+ : Big desktop
+
+
+*/
+/*
+
+$breakpoint argument choices:
+
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
 /*COLORS*/
 /* GRID */
 /* FONT SIZES */
@@ -10,7 +30,20 @@
 
 html {
   /* This defines what 1rem is */
+  /* BY DEFAULT, font-size = 16px */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
