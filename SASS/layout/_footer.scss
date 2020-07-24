@@ -3,6 +3,10 @@
     padding: 10rem 0;
     font: 1.4rem;
 
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
     &__logo {
         width: 15rem;
         height: auto;
@@ -10,12 +14,21 @@
 
     &__logo-box {
         text-align: center;
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__navigation {
         border-top: 1px solid $color-grey-light-1;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
 
     }
 
@@ -57,5 +70,11 @@
         padding-top: 2rem;
         display: inline-block;
         float: right;
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
     }
 }
